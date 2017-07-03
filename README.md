@@ -1,4 +1,4 @@
-This is a fork of the demoPuppy which was originally designed by K. Dermitzakis (dermitza)[https://github.com/dermitza].
+This is a fork of the demoPuppy which was originally designed by K. Dermitzakis [dermitza](htps://github.com/dermitza)
 
 New models were added which are compatible with the original models. They include
 - Servo holders for standard size servos
