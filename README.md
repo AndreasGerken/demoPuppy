@@ -9,4 +9,5 @@ New models were added which are compatible with the original models. They includ
 All included files can be 3D printed. We used an Ultimaker2.
 
 The new models are included in the V5 pack. This configuration is shown in the following image:
-![alt text](https://github.com/AndreasGerken/demoPuppy/img/demoPuppy_V5.png "DemoPuppy V5")
+
+![alt text](https://raw.githubusercontent.com/AndreasGerken/demoPuppy/master/img/demoPuppy_V5.png "DemoPuppy V5")
