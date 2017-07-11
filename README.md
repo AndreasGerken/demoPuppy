@@ -22,4 +22,22 @@ In our configuration puppy has an IMU and 4 servos for the legs. They can be wir
 
 - The red chip on the left is the MPU6050
 - the red chip on the top is a voltage regulator. It should fit the requirements of the Servos.
+- We use an Arduino Mega
+
+## Arduino program
+
+The arduino program found in arduino/puppy_base is compatible with the wiring shown before.
+
+### Installation
+Many parts of the program are identical with the code in the [tinyIMU](https://github.com/AndreasGerken/tinyIMU_arduino) repository.
+This repository has a step by step instruction how to install the package which have to be followed to use this package.
+
+
+### Features
+- The program is [ROS](http://www.ros.org/) enabled and can communicate to a ros master via [rosserial](http://wiki.ros.org/rosserial)
+- The program reads the IMU measurements with a high frequency (~300Hz), and publishes a smoothed version at around 20Hz with the topic "\tinyIMU" and in the tinyIMU data type to reduce data traffic
+- The program subscribes to motor commands with the topic "\puppyMotor" and gives the corresponding PWM commands to the servos. The value range is between (-32768 and 32768)
+- The program runs a diagnostic about the load percentage in it's loop and publishes it with the topic "\timing"
+
+
 
