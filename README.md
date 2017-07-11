@@ -1,5 +1,8 @@
+# Demo Puppy
+
 This is a fork of the demoPuppy which was originally designed by K. Dermitzakis [dermitza](https://github.com/dermitza). The original files are described on his [website](https://dermitza.github.io/demoPuppy/).
 
+## Modified files
 New models were added which are compatible with the original models. They include
 - Servo holders for cheap Carson CS-3 standard size servos
 - Flexible legs which can be printed in one piece with flexible material
@@ -11,3 +14,12 @@ All included files can be 3D printed. We used an Ultimaker2.
 The new models are included in the V5 pack. This configuration is shown in the following image:
 
 ![alt text](img/demoPuppy_V5.png "DemoPuppy V5")
+
+## Electronics
+
+In our configuration puppy has an IMU and 4 servos for the legs. They can be wired as shown in the following graphic
+![alt text](img/puppy_electronics_bb.png "Wiring")
+
+- The red chip on the left is the MPU6050
+- the red chip on the top is a voltage regulator. It should fit the requirements of the Servos.
+
