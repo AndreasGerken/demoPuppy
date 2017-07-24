@@ -5,7 +5,7 @@ This is a fork of the demoPuppy which was originally designed by K. Dermitzakis 
 ## Modified files
 New models were added which are compatible with the original models. They include
 - Servo holders for cheap Carson CS-3 standard size servos
-- Flexible legs which can be printed in one piece with flexible material
+- Flexible legs which can be printed in one piece with flexible filament. We used [Ninjatek's Ninjaflex](https://ninjatek.com/products/filaments/ninjaflex/).
 - A one piece body unit which has the holes to hold a Arduino Mega
 - A holder for the IMU "MPU6050" which fits to the one piece body
 
@@ -35,7 +35,10 @@ This repository has a step by step instruction how to install the package which 
 
 ### Features
 - The program is [ROS](http://www.ros.org/) enabled and can communicate to a ros master via [rosserial](http://wiki.ros.org/rosserial)
-- The program reads the IMU measurements with a high frequency (~300Hz), and publishes a smoothed version at around 20Hz with the topic "\tinyIMU" and in the tinyIMU data type to reduce data traffic. To transfer the messages to a standard IMU message the package [tinyIMU_relay](https://github.com/superjax/tinyIMU_relay) can be used. The package has a scaling feature to convert the raw values to ROS standard units.
+- The program reads the IMU measurements with a high frequency (~300Hz), and publishes a smoothed version at around 20Hz with the topic "\tinyIMU" and in the tinyIMU data type to reduce data traffic.
 - The program subscribes to motor commands with the topic "\puppyMotor" and gives the corresponding PWM commands to the servos. The value range is between (-32768 and 32768)
 - The program runs a diagnostic about the load percentage in it's loop and publishes it with the topic "\timing"
-- The repository [smp_control](https://github.com/AndreasGerken/smp_control) includes configuration files for self exploration of this robot.
+
+## Additional repositories
+ - To transfer the tinyIMU messages to a standard IMU message the package [tinyIMU_relay](https://github.com/superjax/tinyIMU_relay) can be used. The package has a scaling feature to convert the raw values to ROS standard units.
+ - The repository [smp_control](https://github.com/AndreasGerken/smp_control) includes configuration files for self exploration of this robot.
