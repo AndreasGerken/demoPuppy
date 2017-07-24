@@ -11,7 +11,7 @@ New models were added which are compatible with the original models. They includ
 
 All included files can be 3D printed. We used an Ultimaker2.
 
-The new models are included in the [V5 pack](blob/master/packs/puppy_v05_one_part_stl.zip). This configuration is shown in the following image:
+The new models are included in the [V5 pack](packs/puppy_v05_one_part_stl.zip). This configuration is shown in the following image:
 
 ![alt text](img/overview_new.jpg "DemoPuppy V5")
 
